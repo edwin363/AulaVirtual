@@ -32,8 +32,8 @@ const virtualLogin = (user) => {
     return (dispatch) => {
         dispatch(loginRequest());
         Axios.post(``, {
-            name: "",
-            license: ""
+            name: user.name,
+            license: user.license
         }).then(response => {
             dispatch(loginRequest([response.data]));
         })
