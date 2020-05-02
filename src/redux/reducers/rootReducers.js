@@ -5,4 +5,4 @@ const rootReducers = combineReducers({
     login
 });
 
-export default rooReducers;
+export default rootReducers;
